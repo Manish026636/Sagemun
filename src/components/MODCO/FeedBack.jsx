@@ -12,7 +12,7 @@ const FeedBack = () => {
     <>
       {/* Button to trigger the modal */}
       <button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold  py-2 px-1 md:px-4 lg:px-4 rounded"
+        className="bg-indigo-500 hover:bg-blue-700 text-white font-bold  py-2 px-1 md:px-4 lg:px-4 rounded-lg"
         onClick={toggleModal}
       >
         Feedback
@@ -28,7 +28,7 @@ const FeedBack = () => {
             >
               <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
             </div>
-            <div className="bg-white rounded-xl overflow-hidden shadow-xl transform transition-all w-full sm:max-w-lg sm:w-full">
+            <div className="bg-white rounded-xl overflow-hidden shadow-xl transform transition-all w-full  sm:max-w-lg sm:w-full">
               <div className="bg-blue-500 px-4 py-2 text-white font-bold">
                 Delegate Feedback
               </div>

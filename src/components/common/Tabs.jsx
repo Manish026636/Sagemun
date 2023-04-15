@@ -10,7 +10,7 @@ const Tabs = () => {
     return (
         <div>
             <div className="flex justify-center">
-                <div className="w-full  lg:w-1/2 bg-blue-100 mt-4 p-4 mb-4  rounded-xl">
+                <div className="w-full  lg:w-1/2 bg-indigo-200 mt-4 p-4 mb-4  rounded-xl">
                     <div className="flex justify-center items-center ">
                         <ul className="flex">
                             <li
