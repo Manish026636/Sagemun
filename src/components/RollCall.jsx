@@ -3,7 +3,11 @@ import React from 'react'
 const RollCall = () => {
   return (
     <div>
+<<<<<<< HEAD
     <div className="bg-white border-2  border-gray-200 rounded-3xl shadow-md p-6 w-full  md:h-[25vh]">
+=======
+    <div className="bg-white border-2  border-gray-200 rounded-3xl shadow-md p-6 w-full md:h-[25vh]  lg:h-[20vh]">
+>>>>>>> e18d458e7edf2a8ff00c1ef7728eba9c94f09fde
     <h2 className="text-lg md:text-2xl text font-medium mb-4">
       Roll Call Result
     </h2>
