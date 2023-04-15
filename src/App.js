@@ -1,12 +1,13 @@
 import './App.css';
-import Dashboard from './components/Dashboard';
+import GSLDashboard from "./components/MODCO/GSLDashboard";
+
 import Navbar from './components/Navbar';
 
 function App() {
   return (
     <>
     <Navbar/>
-    <Dashboard/>
+    <GSLDashboard/>
     </>
   );
 }

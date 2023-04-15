@@ -1,10 +1,12 @@
 import React from 'react'
+import FeedBack from "./FeedBack";
+
 const Table = () => {
     const data = [
-        { id: 1, flag: <img className="border-2 rounded-xl border-gray-300" src="india.png" alt="India flag" />, name: "Akash Yadav", action: "Start",feedback: "Feedback" },
-        { id: 2, flag: <img className="border-2 rounded-xl border-gray-300" src="russia.png" alt="Russia flag" />, name: "Harsh Kumar", action: "Start",feedback: "Feedback" },
-        { id: 3, flag: <img className="border-2 rounded-xl border-gray-300" src="usa.jpeg" alt="USA flag" />, name: "Manish Yadav", action: "Start",feedback: "Feedback" },
-        { id: 4, flag: <img className="border-2 rounded-xl border-gray-300" src="france.png" alt="France flag" />, name: "Juniper", action: "Start" ,feedback: "Feedback"},
+        { id: 1, flag: <img className="border-2 rounded-xl border-gray-300" src="india.png" alt="India flag" />, name: "Akash Yadav", action: "Start"},
+        { id: 2, flag: <img className="border-2 rounded-xl border-gray-300" src="russia.png" alt="Russia flag" />, name: "Harsh Kumar", action: "Start"},
+        { id: 3, flag: <img className="border-2 rounded-xl border-gray-300" src="usa.jpeg" alt="USA flag" />, name: "Manish Yadav", action: "Start" },
+        { id: 4, flag: <img className="border-2 rounded-xl border-gray-300" src="france.png" alt="France flag" />, name: "Juniper", action: "Start"},
       ];
   return (
     <div>
@@ -43,9 +45,7 @@ const Table = () => {
                   </button>
                 </td>
                 <td className="border  py-2">
-                  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
-                    {item.feedback}
-                  </button>
+                <FeedBack/>
                 </td>
               </tr>
             ))}
