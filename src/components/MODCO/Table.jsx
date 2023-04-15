@@ -16,7 +16,7 @@ const Table = () => {
 
       ];
   return (
-    <div className="mt-16 container mx-auto">
+    <div className="mt-10 container mx-auto">
       <div className="bg-blue-500 h-20 rounded-xl w-full md:w-1/2">
         <h2 className="text-3xl text-white font-medium py-5 mb-4">
           Delegates

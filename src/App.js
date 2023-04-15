@@ -1,13 +1,13 @@
 import './App.css';
-import GSLDashboard from "./components/MODCO/GSLDashboard";
+import MODDashboard from "./components/MODCO/MODDashboard";
 
-import Navbar from './components/Navbar';
+import Navbar from './components/common/Navbar';
 
 function App() {
   return (
     <>
     <Navbar/>
-    <GSLDashboard/>
+    <MODDashboard/>
     </>
   );
 }
