@@ -10,8 +10,6 @@ const Dashboard = () => {
     };
   return (
     <div>
-    <div class="absolute w-full bg-blue-500 rounded-b-3xl dark:hidden h-80">
-
     <div className="flex flex-col lg:flex-row h-screen">
     {/* Sidebar */}
     <div
@@ -49,44 +47,46 @@ const Dashboard = () => {
     {/* Main content */}
     <div className="flex-1 p-4 lg:p-8">
       {/* Top four cards */}
-      <div className="grid grid-cols-1 mt-16 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-        <div className="bg-white rounded-3xl shadow-md p-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-lg font-medium mb-4">Card 1</h2>
           <p className="text-gray-600">Card content goes here.</p>
         </div>
-        <div className="bg-white rounded-3xl shadow-md p-6">
+        <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-lg font-medium mb-4">Card 2</h2>
           <p className="text-gray-600">Card content goes here.</p>
         </div>
-        <div className="bg-white rounded-3xl shadow-md p-6">
+        <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-lg font-medium mb-4">Card 3</h2>
           <p className="text-gray-600">Card content goes here.</p>
         </div>
-        <div className="bg-white rounded-3xl shadow-md p-6">
+        <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-lg font-medium mb-4">Card 4</h2>
           <p className="text-gray-600">Card content goes here.</p>
         </div>
       </div>
 
       {/* Two big cards */}
-      <div className="flex flex-cols-1 justify-center lg:grid-cols-2 gap-4 mb-8">
-        <div className="bg-white rounded-3xl shadow-md p-6 w-full lg:w-500 h-[30vh]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8">
+        <div className="bg-white rounded-lg shadow-md p-6 w-full lg:w-500 h-600">
           <h2 className="text-lg font-medium mb-4">Card 5</h2>
           <p className="text-gray-600">Card content goes here.</p>
         </div>
-        
+        <div className="bg-white rounded-lg shadow-md p-6 w-full lg:w-350 h-600">
+          <h2 className="text-lg font-medium mb-4">Card 6</h2>
+          <p className="text-gray-600">Card content goes here.</p>
+        </div>
       </div>
 
       {/* Third div */}
-      <div className="bg-gray-500 rounded-3xl shadow-md p-6 w-full h-[50vh]">
+      <div className="bg-white rounded-lg shadow-md p-6 w-full lg:w-500 h-600">
         <h2 className="text-lg font-medium mb-4">Card 7</h2>
         <p className="text-gray-600">Card content goes here.</p>
       </div>
     </div>
-  </div>
     </div>
     </div>
   )
 }
 
-export default Dashboard
+export default Dashboard;
