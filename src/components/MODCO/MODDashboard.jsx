@@ -8,7 +8,7 @@ const GSLDashboard = () => {
     <div>
 
 
-      <div class="absolute w-full bg-[#f5f8fe]   rounded-b-3xl dark:hidden h-96">
+      <div class="absolute w-full bg-[#f5f8fe]   rounded-b-3xl dark:hidden h-[49vh]">
         <div className="flex flex-col lg:flex-row h-screen">
           <div className="flex-1 p-4 lg:p-8">
 
