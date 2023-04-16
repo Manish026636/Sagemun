@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Tabs from "../common/Tabs";
 import SessionInfo from "../common/SessionInfo";
+import Tabs from "./Tabs";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -133,8 +133,7 @@ const Navbar = () => {
         </div>
       </nav>
       
-
-      <Tabs />
+      <Tabs/>
       <SessionInfo />
       
     </>

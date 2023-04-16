@@ -3,14 +3,14 @@ import FeedBack from "./FeedBack";
 
 const Table = () => {
     const data = [
-        { id: 1, flag: <img className="border-2 rounded-xl border-gray-300" src="india.png" alt="India flag" />,countryName:"India" , name: "Akash Yadav", action: "Start"},
-        { id: 2, flag: <img className="border-2 rounded-xl border-gray-300" src="russia.png" alt="Russia flag" />,countryName:"Russia", name: "Harsh Kumar", action: "Start"},
-        { id: 3, flag: <img className="border-2 rounded-xl border-gray-300" src="usa.jpeg" alt="USA flag" />,countryName:"USA", name: "Manish Yadav", action: "Start" },
-        { id: 4, flag: <img className="border-2 rounded-xl border-gray-300" src="france.png" alt="France flag" />,countryName:"France", name: "Juniper", action: "Start"},
-        { id: 5, flag: <img className="border-2 rounded-xl border-gray-300" src="india.png" alt="India flag" />,countryName:"India", name: "Akash Yadav", action: "Start"},
-        { id: 6, flag: <img className="border-2 rounded-xl border-gray-300" src="russia.png" alt="Russia flag" />,countryName:"Russia", name: "Harsh Kumar", action: "Start"},
-        { id: 7, flag: <img className="border-2 rounded-xl border-gray-300" src="usa.jpeg" alt="USA flag" />,countryName:"USA", name: "Manish Yadav", action: "Start" },
-        { id: 8, flag: <img className="border-2 rounded-xl border-gray-300" src="france.png" alt="France flag" />,countryName:"France", name: "Juniper", action: "Start"},
+        { id: 1, flag: <img className="border-2 rounded-xl border-gray-300" src="india.png" alt="India flag" />,countryName:"India" , name: "Akash Yadav",reserveTime:"10s", action: "Start"},
+        { id: 2, flag: <img className="border-2 rounded-xl border-gray-300" src="russia.png" alt="Russia flag" />,countryName:"Russia", name: "Harsh Kumar",reserveTime:"19s", action: "Start"},
+        { id: 3, flag: <img className="border-2 rounded-xl border-gray-300" src="usa.jpeg" alt="USA flag" />,countryName:"USA", name: "Manish Yadav",reserveTime:"30s", action: "Start" },
+        { id: 4, flag: <img className="border-2 rounded-xl border-gray-300" src="france.png" alt="France flag" />,countryName:"France", name: "Juniper",reserveTime:"24s", action: "Start"},
+        { id: 5, flag: <img className="border-2 rounded-xl border-gray-300" src="india.png" alt="India flag" />,countryName:"India", name: "Akash Yadav",reserveTime:"13s", action: "Start"},
+        { id: 6, flag: <img className="border-2 rounded-xl border-gray-300" src="russia.png" alt="Russia flag" />,countryName:"Russia", name: "Harsh Kumar",reserveTime:"20s", action: "Start"},
+        { id: 7, flag: <img className="border-2 rounded-xl border-gray-300" src="usa.jpeg" alt="USA flag" />,countryName:"USA", name: "Manish Yadav",reserveTime:"32s", action: "Start" },
+        { id: 8, flag: <img className="border-2 rounded-xl border-gray-300" src="france.png" alt="France flag" />,countryName:"France", name: "Juniper",reserveTime:"08s", action: "Start"},
         
         
 
@@ -31,6 +31,7 @@ const Table = () => {
                 <th className="px-2 py-2">Country Flag</th>
                 <th className="px-2 py-2">Country Name</th>
                 <th className="px-2 py-2">Name</th>
+                <th className="px-2 py-2">Reserve Time</th>
                 <th className="px-2 py-2">Action</th>
                 <th className="px-2 py-2">Feedback</th>
               </tr>
@@ -47,6 +48,9 @@ const Table = () => {
                   </td>
                   <td className="border font-medium lg:text-xl py-2">
                     {item.name}
+                  </td>
+                  <td className="border font-medium lg:text-xl py-2">
+                    {item.reserveTime}
                   </td>
                   <td className="border py-2">
                     <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">

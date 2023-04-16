@@ -3,7 +3,7 @@ import React from 'react'
 const SessionInfo = () => {
   return (
     <div>
-      <div className="container mx-auto p-2 grid grid-cols-1  justify-center  md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+      <div className="container mt-6 mx-auto p-2 grid grid-cols-2  justify-center  md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
         <div className="bg-white border-2 border-gray-300 rounded-3xl text-center shadow-md p-2">
           <p className=" mb-4 text-lg">Committee Name</p>
           <h1 className="text-gray-600 text-2xl font-bold">UNGA</h1>
