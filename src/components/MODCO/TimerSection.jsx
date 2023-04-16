@@ -22,7 +22,7 @@ const TimerSection = () => {
           Set Time
         </button>
         <button class="bg-[#9ea9ba] hover:bg-blue-700 text-white font-bold rounded-xl py-2 text-sm md:text-lg lg:text-lg  ">
-          Reest
+          Reset
         </button>
         <button class="bg-[#9ea9ba] hover:bg-blue-700 text-white font-bold rounded-xl py-2 text-sm md:text-lg lg:text-lg  ">
           Play

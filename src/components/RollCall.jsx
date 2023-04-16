@@ -1,6 +1,6 @@
 import React from 'react'
-import FeedBack from './MODCO/FeedBack'
 import Motions from './MODCO/Motions'
+import VotingModal from './common/VotingModal'
 
 const RollCall = () => {
   return (
@@ -26,9 +26,7 @@ const RollCall = () => {
         </h2>
         <div class="grid  mt-6 md:mt-10 lg:mt-10 grid-cols-2 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4">
           <Motions/>
-          <button class="bg-blue-400 hover:bg-blue-700 text-white font-bold rounded-xl py-4 text-md sm:text-sm md:text-lg lg:text-xl  ">
-           Vote
-          </button>
+         <VotingModal/>
           
         </div>
       </div>

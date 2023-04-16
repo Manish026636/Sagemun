@@ -24,7 +24,7 @@ const Table = () => {
       </div>
       <div className="mt-6 overflow-x-auto rounded-2xl  border">
         <div className="table-container scrollbar-hide overflow-y-auto h-96">
-          <table className="text-center  table-auto w-full scrollbar-hide">
+          <table className="text-center  table-auto w-full ">
             <thead className="sticky top-0 bg-gray-200 text-gray-800">
               <tr>
                 <th className="px-2  py-2">ID</th>

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import ReactStars from "react-rating-stars-component";
 
 const Motions = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -100,7 +99,7 @@ const Motions = () => {
                     Submit
                   </button>
                   <button
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded "
+                    className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded "
                     onClick={toggleModal}
                   >
                     Close
