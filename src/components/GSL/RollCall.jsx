@@ -1,7 +1,6 @@
 import React from 'react'
-import Motions from './MODCO/Motions'
-import VotingModal from './common/VotingModal'
-
+import Motions from '../MCAUS/Motions'
+import VotingModal from '../MCAUS/VotingModal'
 const RollCall = () => {
   return (
     <div>

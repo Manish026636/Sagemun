@@ -1,12 +1,11 @@
 import React from "react";
 import TimerSection from "./TimerSection";
-import RollCall from "../RollCall";
 import Table from "./Table";
+import RollCall from "../GSL/RollCall";
 const GSLDashboard = () => {
 
   return (
     <div>
-
 
       <div class="absolute w-full bg-[#f5f8fe]   rounded-b-3xl dark:hidden h-[49vh]">
         <div className="flex flex-col lg:flex-row h-screen">
