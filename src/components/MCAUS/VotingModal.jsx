@@ -27,10 +27,10 @@ const VotingModal = () => {
   return (
     <>
       <button
-        className="bg-green-700 hover:bg-blue-700 text-white font-bold py-2 px-1 md:px-4 px-4 rounded-lg"
+        className="text-sm mr-1 mt-2 px-4 py-2 bg-blue-400 font-bold text-white rounded-lg  tracking-wider hover:bg-yellow-300 outline-none"
         onClick={toggleModal}
       >
-        Voting
+        Vote
       </button>
 
       <Modal

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
 const MCAUSTopics = () => {
   return (
@@ -23,9 +24,9 @@ const MCAUSTopics = () => {
                     <p class="lg:text-[16px] mb-4 text-xs font-semibold text-gray-400">
                         Per Speaker Time : 2 min
                     </p>
-                    <button class="text-sm mr-1 mt-2 px-4 py-2 bg-blue-400 font-bold text-white rounded-lg  tracking-wider hover:bg-yellow-300 outline-none">
+                    <Link to="/VoteTest"><button class="text-sm mr-1 mt-2 px-4 py-2 bg-blue-400 font-bold text-white rounded-lg  tracking-wider hover:bg-yellow-300 outline-none">
                         Vote
-                    </button>
+                    </button></Link>
                     <button class="text-sm mr-1  px-4 py-2 bg-green-500 font-bold text-white rounded-lg  tracking-wider hover:bg-yellow-300 outline-none">
                         Pass
                     </button>
@@ -66,7 +67,7 @@ const MCAUSTopics = () => {
                     <button class="text-sm mr-1 mt-2 px-4 py-2 bg-blue-400 font-bold text-white rounded-lg  tracking-wider hover:bg-yellow-300 outline-none">
                         Vote
                     </button>
-                    <button class="text-sm mr-1  px-4 py-2 bg-green-400 font-bold text-white rounded-lg  tracking-wider hover:bg-yellow-300 outline-none">
+                    <button class="text-sm mr-1  px-4 py-2 bg-green-500 font-bold text-white rounded-lg  tracking-wider hover:bg-yellow-300 outline-none">
                         Pass
                     </button>
                     <button class="text-sm lg:mt-0 mt-2 px-4 py-2 bg-red-400 font-bold text-white rounded-lg  tracking-wider hover:bg-yellow-300 outline-none">

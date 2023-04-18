@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/common/Navbar';
 import MotionDashboard from "./components/MCAUS/MotionDashboard"
 import MODDashboard from "./components/MCAUS/MODDashboard"
+import VoteTest from './components/common/VoteTest';
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
     <Routes>
     <Route path='/' element={<MODDashboard/>}></Route>
     <Route path='MotionDashboard' element={<MotionDashboard/>}></Route>
+    <Route path='VoteTest' element={<VoteTest/>}></Route>
     </Routes>
     </BrowserRouter>
    
