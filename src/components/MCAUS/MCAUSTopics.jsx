@@ -15,7 +15,7 @@ const MCAUSTopics = () => {
                         South China Sea Debate
                     </h2>
                     <h4 class="mt-6 text-md lg:text-lg font-bold text-gray-500 text-left">
-                        Country : INDIA
+                        Country : India
                     </h4>
                     <h3 class="  lg:text-lg font-bold text-yellow-500 text-left">
                         Total time : 20 min
@@ -55,7 +55,7 @@ const MCAUSTopics = () => {
                         South China Sea Debate
                     </h2>
                     <h4 class="mt-6 text-md lg:text-lg font-bold text-gray-500 text-left">
-                        Country : INDIA
+                        Country : Russia
                     </h4>
                     <h3 class="  lg:text-lg font-bold text-yellow-500 text-left">
                         Total time : 20 min
