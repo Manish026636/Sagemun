@@ -27,7 +27,7 @@ const VotingModal = () => {
   return (
     <>
       <button
-        className="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-1 md:px-4 lg:px-4 rounded-lg"
+        className="bg-green-700 hover:bg-blue-700 text-white font-bold py-2 px-1 md:px-4 px-4 rounded-lg"
         onClick={toggleModal}
       >
         Voting

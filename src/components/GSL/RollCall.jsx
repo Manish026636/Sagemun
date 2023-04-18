@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link} from "react-router-dom"
-import VotingModal from '../MCAUS/VotingModal'
 const RollCall = () => {
   return (
     <div>
@@ -21,13 +20,14 @@ const RollCall = () => {
           </button>
         </div>
         <h2 className="mt-6 text-lg md:text-2xl text font-medium ">
-         Motions and Voting
+         Motions
         </h2>
-        <div className="grid  mt-6 md:mt-10 lg:mt-10 grid-cols-2 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <Link to="/DoYou"><button className="bg-indigo-700 hover:bg-blue-700 text-white font-bold rounded-xl py-2 text-md sm:text-sm md:text-lg lg:text-xl  ">
+        <div className="flex  mt-6 md:mt-10 lg:mt-10 grid-cols-2 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div>
+        </div>
+       <Link to="/MotionDashboard"><button className="bg-indigo-700 px-4 hover:bg-blue-700 text-white font-bold rounded-xl py-2 text-md sm:text-sm md:text-lg lg:text-xl  ">
            Take Motion
           </button></Link>
-         <VotingModal/>
           
         </div>
       </div>

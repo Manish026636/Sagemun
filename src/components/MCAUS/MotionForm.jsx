@@ -1,10 +1,10 @@
-
+import React from "react";
 function MotionQues() {
  
 
   return (
     <>
-      <div className="bg-white rounded-xl overflow-hidden shadow-xl transform transition-all w-full  sm:max-w-lg sm:w-full">
+      <div className="bg-white rounded-xl overflow-hidden shadow-xl  w-full  sm:max-w-lg sm:w-full">
         <div className="bg-blue-500 text-center px-4 py-2 text-white md:text-lg lg:text-lg font-bold">
           Do you have any motions on the floor ?
         </div>
