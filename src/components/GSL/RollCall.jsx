@@ -1,5 +1,5 @@
 import React from 'react'
-import Motions from '../MCAUS/Motions'
+import {Link} from "react-router-dom"
 import VotingModal from '../MCAUS/VotingModal'
 const RollCall = () => {
   return (
@@ -9,22 +9,24 @@ const RollCall = () => {
         <h2 className="text-lg md:text-2xl text font-medium mb-2">
           Roll Call Result
         </h2>
-        <div class="grid  mt-6 md:mt-10 lg:mt-10 grid-cols-2 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <button class="bg-red-400 hover:bg-blue-700 text-white font-bold rounded-xl py-4 text-md sm:text-sm md:text-xl lg:text-xl ">
+        <div className="grid  mt-6 md:mt-10 lg:mt-10 grid-cols-2 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <button className="bg-red-400 hover:bg-blue-700 text-white font-bold rounded-xl py-4 text-md sm:text-sm md:text-xl lg:text-xl ">
             Absent : 2
           </button>
-          <button class="bg-blue-400 hover:bg-blue-700 text-white font-bold rounded-xl py-4 text-md sm:text-sm md:text-lg lg:text-xl  ">
+          <button className="bg-blue-400 hover:bg-blue-700 text-white font-bold rounded-xl py-4 text-md sm:text-sm md:text-lg lg:text-xl  ">
             Present : 14
           </button>
-          <button class="bg-indigo-400 hover:bg-blue-700 text-white font-bold rounded-xl py-4 text-md sm:text-sm md:text-lg lg:text-xl  ">
+          <button className="bg-indigo-400 hover:bg-blue-700 text-white font-bold rounded-xl py-4 text-md sm:text-sm md:text-lg lg:text-xl  ">
             P&V :{" "}
           </button>
         </div>
         <h2 className="mt-6 text-lg md:text-2xl text font-medium ">
          Motions and Voting
         </h2>
-        <div class="grid  mt-6 md:mt-10 lg:mt-10 grid-cols-2 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <Motions/>
+        <div className="grid  mt-6 md:mt-10 lg:mt-10 grid-cols-2 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <Link to="/DoYou"><button className="bg-indigo-700 hover:bg-blue-700 text-white font-bold rounded-xl py-2 text-md sm:text-sm md:text-lg lg:text-xl  ">
+           Take Motion
+          </button></Link>
          <VotingModal/>
           
         </div>

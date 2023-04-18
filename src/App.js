@@ -1,12 +1,11 @@
 import './App.css';
-import MODDashboard from "./components/MCAUS/MODDashboard"
+import DoYou from './components/common/DoYou';
 import Navbar from './components/common/Navbar';
-
 function App() {
   return (
     <>
     <Navbar/>
-    <MODDashboard/>
+    <DoYou/>
     </>
   );
 }
