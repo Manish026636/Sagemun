@@ -24,7 +24,7 @@ const MCAUSTopics = () => {
                     <p class="lg:text-[16px] mb-4 text-xs font-semibold text-gray-400">
                         Per Speaker Time : 2 min
                     </p>
-                    <Link to="/VoteTest"><button class="text-sm mr-1 mt-2 px-4 py-2 bg-blue-400 font-bold text-white rounded-lg  tracking-wider hover:bg-yellow-300 outline-none">
+                    <Link to="/Voting"><button class="text-sm mr-1 mt-2 px-4 py-2 bg-blue-400 font-bold text-white rounded-lg  tracking-wider hover:bg-yellow-300 outline-none">
                         Vote
                     </button></Link>
                     <button class="text-sm mr-1  px-4 py-2 bg-green-500 font-bold text-white rounded-lg  tracking-wider hover:bg-yellow-300 outline-none">

@@ -60,3 +60,9 @@
   border-radius: 50%; 
   background-color: rgb(79, 79, 79); 
 }
+.scrolla {
+  
+  overflow-y: auto;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
