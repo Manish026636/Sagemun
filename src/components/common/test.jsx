@@ -3,30 +3,54 @@ import React, { useState } from "react";
 const VoteTest = () => {
   const [data, setData] = useState([
     {
-      id: 1,flag: (<img className="border-2 rounded-xl border-gray-300" src="india.png" alt="India flag"/>),countryName: "India",favour: 0,against: 0,abstain: 0,
+      id: 1,
+      flag: (
+        <img
+          className="border-2 rounded-xl border-gray-300"
+          src="india.png"
+          alt="India flag"
+        />
+      ),
+      countryName: "India",
+      favour: 0,
+      against: 0,
+      abstain: 0,
     },
     {
-      id: 2,flag: (<img className="border-2 rounded-xl border-gray-300" src="russia.png" alt="Russia flag"/>),countryName: "Russia",favour: 0,against: 0,abstain: 0,
+      id: 2,
+      flag: (
+        <img
+          className="border-2 rounded-xl border-gray-300"
+          src="russia.png"
+          alt="Russia flag"
+        />
+      ),
+      countryName: "Russia",
+      favour: 0,
+      against: 0,
+      abstain: 0,
     },
     {
-      id: 3,flag: (<img className="border-2 rounded-xl border-gray-300" src="usa.jpeg" alt="USA flag"/>),countryName: "USA",favour: 0,against: 0,abstain: 0,
-    },
-    {
-      id: 4,flag: (<img className="border-2 rounded-xl border-gray-300" src="france.png" alt="France flag"/>),countryName: "France",favour: 0,against: 0,abstain: 0,
-    },
-    {
-      id: 5,flag: (<img className="border-2 rounded-xl border-gray-300" src="russia.png" alt="Russia flag"/>),countryName: "Russia",favour: 0,against: 0,abstain: 0,
-    },
-    {
-      id: 6,flag: (<img className="border-2 rounded-xl border-gray-300" src="usa.jpeg" alt="USA flag"/>),countryName: "USA",favour: 0,against: 0,abstain: 0,
+      id: 3,
+      flag: (
+        <img
+          className="border-2 rounded-xl border-gray-300"
+          src="usa.jpeg"
+          alt="USA flag"
+        />
+      ),
+      countryName: "USA",
+      favour: 0,
+      against: 0,
+      abstain: 0,
     },
   ]);
 
   const handleVote = (id, voteType) => {
     setData((prevData) =>
       prevData.map((item) => {
-        if (item.id === id && !item[voteType]) {
-          return { ...item, [voteType]: 1 };
+        if (item.id === id) {
+          return { ...item, [voteType]: item[voteType] + 1 };
         }
         return item;
       })
@@ -36,7 +60,7 @@ const VoteTest = () => {
   const calculateVotePercentage = (voteType) => {
     const totalVotes = data.reduce((acc, item) => acc + item[voteType], 0);
     const totalCountries = data.length;
-    const votePercentage = (totalVotes / (totalCountries * 1)) * 100;
+    const votePercentage = (totalVotes / (totalCountries * 3)) * 100;
     return votePercentage;
   };
 
@@ -46,8 +70,6 @@ const VoteTest = () => {
     const abstainPercentage = calculateVotePercentage("abstain");
     return favourPercentage + abstainPercentage > 50 && againstPercentage < 50;
   };
-
-  const isCountryVoted = (item) => item.favour || item.against || item.abstain;
 
   return (
     <div className="mt-10 p-2 container mx-auto">
@@ -85,27 +107,24 @@ const VoteTest = () => {
                     <button
                       className="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg"
                       onClick={() => handleVote(item.id, "favour")}
-                      disabled={isCountryVoted(item)}
                     >
-                      {item.favour ? "Voted" : "Vote"}
+                      Vote
                     </button>
                   </td>
                   <td className="border py-2">
                     <button
                       className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg"
                       onClick={() => handleVote(item.id, "against")}
-                      disabled={isCountryVoted(item)}
                     >
-                      {item.against ? "Voted" : "Vote"}
+                      Vote
                     </button>
                   </td>
                   <td className="border py-2">
                     <button
                       className="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg"
                       onClick={() => handleVote(item.id, "abstain")}
-                      disabled={isCountryVoted(item)}
                     >
-                      {item.abstain ? "Voted" : "Vote"}
+                      Vote
                     </button>
                   </td>
                 </tr>
@@ -116,7 +135,7 @@ const VoteTest = () => {
       </div>
       <div className="mt-8">
         {isVotePassed() ? (
-          <div className="bg-green-500 w-1/2 text-white px-6 py-3 rounded-xl text-center">
+          <div className="bg-green-500 text-white px-6 py-3 rounded-md text-center">
             <p className="text-lg font-medium">Vote Passed</p>
             <p className="text-md">
               Favour: {calculateVotePercentage("favour")}%
@@ -129,7 +148,7 @@ const VoteTest = () => {
             </p>
           </div>
         ) : (
-          <div className="bg-red-500 w-1/2 text-white px-6 py-3 rounded-xl text-center">
+          <div className="bg-red-500 text-white px-6 py-3 rounded-md text-center">
             <p className="text-lg font-medium">Vote Failed</p>
             <p className="text-md">
               Favour: {calculateVotePercentage("favour")}%
