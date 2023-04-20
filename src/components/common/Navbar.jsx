@@ -135,7 +135,6 @@ const Navbar = () => {
       
       <Tabs/>
       <SessionInfo />
-      
     </>
   );
 };

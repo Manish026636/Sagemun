@@ -23,6 +23,9 @@ const VoteTest = () => {
     {
       id: 7,flag: (<img className="border-2 rounded-xl border-gray-300" src="usa.jpeg" alt="USA flag"/>),countryName: "USA",favour: 0,against: 0,abstain: 0,
     },
+    {
+      id: 8,flag: (<img className="border-2 rounded-xl border-gray-300" src="india.png" alt="India flag"/>),countryName: "India",favour: 0,against: 0,abstain: 0,
+    }
   ]);
 
   const handleVote = (id, voteType) => {
