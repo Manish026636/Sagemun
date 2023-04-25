@@ -1,68 +1,40 @@
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
 
 /* VotingModal */
-.Favorradio {
-  position: relative;
-  width: 20px; 
-  height: 20px; 
-  border: 1px solid #000; 
-  border-radius: 50%;
-  cursor: pointer;
-}
 
-.Favorradio:checked::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  right: 2px;
-  bottom: 2px;
-  border-radius: 50%; 
-  background-color: rgb(45, 236, 77); 
-}
-.Againstradio {
-  position: relative;
-  width: 20px; 
-  height: 20px; 
-  border: 1px solid #000; 
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.Againstradio:checked::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  right: 2px;
-  bottom: 2px;
-  border-radius: 50%; 
-  background-color: rgb(240, 46, 36); 
-}
-.Abstainradio {
-  position: relative;
-  width: 20px; 
-  height: 20px; 
-  border: 1px solid #000; 
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.Abstainradio:checked::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  right: 2px;
-  bottom: 2px;
-  border-radius: 50%; 
-  background-color: rgb(79, 79, 79); 
-}
 .scrolla {
   
   overflow-y: auto;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
+#sidebar {
+  --tw-translate-x: -100%;
+  
+}
+#menu-close-icon {
+  display: none;
+}
+
+#menu-open:checked ~ #sidebar {
+  --tw-translate-x: 0;
+}
+#menu-open:checked ~ * #mobile-menu-button {
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+}
+#menu-open:checked ~ * #menu-open-icon {
+  display: none;
+}
+#menu-open:checked ~ * #menu-close-icon {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  #sidebar {
+      --tw-translate-x: 0;
+  }
+}
+

@@ -12,6 +12,7 @@ function App() {
 
     <Routes>
     <Route path='/' element={<MODDashboard/>}></Route>
+    <Route path='MOD' element={<MODDashboard/>}></Route>
     <Route path='MotionDashboard' element={<MotionDashboard/>}></Route>
     <Route path='Voting' element={<Voting/>}></Route>
     </Routes>
